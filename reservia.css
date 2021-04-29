@@ -1,0 +1,87 @@
+/* -------- Général -------- */
+body{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1em;
+}
+
+/* -------- HEADER/Logo et Nav -------- */
+#bandeau{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.menu{
+    display: flex;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+nav li{
+    margin-right: 4em;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+}
+nav a:focus{
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+    padding-top: 29px;
+}
+.signin{
+    display: flex;
+    align-items: center;
+}
+.signin a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #0065FC;
+}
+/* -------- HEADER/Recherche et Filtre -------- */
+h1{
+    font-size: 1.5em;
+}
+.recherche{
+    display: flex;
+    margin-bottom: 1em;
+}
+.recherche .fas{
+    background-color: #F2F2F2;
+    padding: 0.8em;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+#marecherche{
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    border: 2px solid #F2F2F2;
+}
+.bouton{
+    background-color: #0065FC;
+    color: white;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    font-weight: bold;
+    border: 2px solid #0065FC;
+    text-align: center;
+}
+.filtre{
+    display: flex;
+}
+.filtre .fas{
+    background-color: #DEEBFF;
+    border-radius: 1em;
+}
+.filtre button{
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid #F2F2F2;
+    border-radius: 1em;
+}
+.eco .fas{
+    background-color: red;
+}
+/* -------- SECTION -------- */
