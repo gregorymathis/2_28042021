@@ -2,6 +2,8 @@
 body{
     font-family: 'Raleway', sans-serif;
     line-height: 1em;
+    width: 92%;
+    margin: auto;
 }
 
 /* -------- HEADER/Logo et Nav -------- */
@@ -12,6 +14,7 @@ body{
 }
 .menu{
     display: flex;
+    margin-right: 10px;
 }
 nav ul{
     list-style: none;
@@ -27,6 +30,8 @@ nav a{
 }
 nav a:focus{
     border-top: 2px solid #0065FC;
+    padding-left: 1em;
+    padding-right: 1em;
     color: #0065FC;
     padding-top: 29px;
 }
@@ -59,6 +64,9 @@ h1{
     font-weight: bold;
     border: 2px solid #F2F2F2;
 }
+#marecherche::placeholder{
+    color: black;
+}
 .bouton{
     background-color: #0065FC;
     color: white;
@@ -68,22 +76,194 @@ h1{
     border: 2px solid #0065FC;
     text-align: center;
 }
+.text-filtre{
+    font-weight: bold;
+    margin-top: 0.7em;
+    margin-right: 0.5em;
+}
 .filtre{
     display: flex;
-}
-.filtre .fas{
-    width: 2em;
-    height: 2em;
-    background-color: #DEEBFF;
-    border-radius: 1em;
 }
 .filtre button{
     font-weight: bold;
     background-color: white;
     border: 2px solid #F2F2F2;
     border-radius: 1em;
+    padding: 0.8em;
+    padding-left: 3em;
+    margin-left: 2em;
+    position: relative;
 }
-.eco .fas{
-    background-color: red;
+.filtre .fas{
+    background-color: #DEEBFF;
+    border-radius: 1.5em;
+    text-align: center;
+    padding: 0.8em;
+    color: #0065FC;
 }
+.fa-money-bill-wave{
+    position: absolute;
+    left: 8%;
+    z-index: 1;
+}
+.fa-child{
+    position: absolute;
+    left: 300px;
+    z-index: 1;
+}
+.fa-heart{
+    position: absolute;
+    left: 425px;
+    z-index: 1;
+}
+.fa-dog{
+    position: absolute;
+    left: 585px;
+    z-index: 1;
+}
+.filtre-info {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+  
+.icone-info {
+    padding-top: 0.5em;
+    width: 30px;
+    height: 30px;
+}
+.icone-info .fas {
+  padding: 2px;
+  text-align: center;
+  color: #0065FC;
+  font-size: 12px;
+}
+  
+.filtre-info i {
+    border: 2px solid #F2F2F2;
+    border-radius: 20px;
+    width: 1em;
+}
+
 /* -------- SECTION -------- */
+main{
+    display: flex;
+    margin-top: 1em;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: #F2F2F2;
+    margin-right: 3%;
+    border-radius: 20px;
+}
+.ligne1{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.ligne2{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.box{
+    width: 30%;
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 3px 4px 3px #d9d9d9;
+}
+.box img{
+    width: 100%;
+    height: 130px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+main a{
+    text-decoration: none;
+    color: black;
+}
+.description-box{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    line-height: 10px;
+}
+section h2{
+    margin-left: 45px;
+    margin-top: 50px;
+}
+section .plus{
+    margin-left: 45px;
+    margin-bottom: 40px;
+}
+.box i{
+    color: #0065FC;
+}
+.box .gris{
+    color: #F2F2F2;
+}
+
+
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 20px;
+}
+.titre-et-icone{
+    display: flex;
+    justify-content: space-between;
+}
+.titre-et-icone h2{
+    margin-top: 22px;
+    margin-left: 18px;
+}
+.titre-et-icone i{
+    color: black;
+    font-size: 25px;
+    margin-right: 15px;
+    margin-top: 18px;
+}
+.content-popu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box-popu{
+    display: flex;
+    width: 90%;
+    height: 155px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 20px;
+    box-shadow: 3px 4px 3px #d9d9d9;
+}
+.description-popu{
+    margin-left: 10px;
+}
+.description-popu i{
+    color: #0065FC;
+}
+.box-popu a{
+    display: -webkit-inline-flex;
+}
+.box-popu img{
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    object-fit: cover;
+}
+.box-popu .gris{
+    color: #F2F2F2;
+}
