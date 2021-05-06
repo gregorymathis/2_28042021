@@ -2,10 +2,11 @@
 body{
     font-family: 'Raleway', sans-serif;
     line-height: 1em;
+}
+#bloc-page{
     width: 92%;
     margin: auto;
 }
-
 /* -------- HEADER/Logo et Nav -------- */
 #bandeau{
     display: flex;
@@ -144,13 +145,12 @@ h1{
     border-radius: 20px;
     width: 1em;
 }
-
-/* -------- SECTION -------- */
+/* -------- MAIN/SECTION/hebergement -------- */
 main{
     display: flex;
     margin-top: 1em;
 }
-section{
+.hebergement{
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -177,7 +177,7 @@ section{
     margin-top: 10px;
     border-radius: 20px;
     padding: 5px;
-    box-shadow: 3px 4px 3px #d9d9d9;
+    box-shadow: 2px 2px 2px #d9d9d9;
 }
 .box img{
     width: 100%;
@@ -195,11 +195,11 @@ main a{
     margin-bottom: 10px;
     line-height: 10px;
 }
-section h2{
+.hebergement h2{
     margin-left: 45px;
     margin-top: 50px;
 }
-section .plus{
+.hebergement .plus{
     margin-left: 45px;
     margin-bottom: 40px;
 }
@@ -209,8 +209,7 @@ section .plus{
 .box .gris{
     color: #F2F2F2;
 }
-
-
+/* -------- MAIN/ASIDE -------- */
 aside{
     display: flex;
     flex-direction: column;
@@ -246,7 +245,7 @@ aside{
     border-radius: 20px;
     padding: 5px;
     margin: 20px;
-    box-shadow: 3px 4px 3px #d9d9d9;
+    box-shadow: 2px 2px 2px #d9d9d9;
 }
 .description-popu{
     margin-left: 10px;
@@ -266,4 +265,114 @@ aside{
 }
 .box-popu .gris{
     color: #F2F2F2;
+}
+/* -------- SECTION/Activités -------- */
+.titre-activites{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.activites{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 450px;
+    margin-bottom: 50px;
+}
+.activites a{
+    text-decoration: none;
+    color: black;
+}
+.activites h3{
+    margin-left: 1em;
+    font-size: 17px;
+}
+.activites img{
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.col1{
+    width: 25%;
+    margin-right: 3%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #d9d9d9;
+}
+.col1 img{
+    width: 100%;
+    height: 90%;
+}
+.col2{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-right: 3%;
+}
+.col2 img{
+    width: 100%;
+}
+.col2-fort{
+    height: 55%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #d9d9d9;
+    margin-bottom: 46px;
+}
+.col2-fort img{
+    height: 80%;
+}
+.col2-frioul{
+    height: 35%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #d9d9d9;
+}
+.col2-frioul img{
+    height: 71%;
+}
+.col3{
+    width: 25%;
+    margin-right: 3%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #d9d9d9;
+}
+.col3 img{
+    width: 100%;
+    height: 90%;
+}
+.col4{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    border-radius: 20px;
+}
+.col4 img{
+    width: 100%;
+    height: 40%;
+}
+.col4-garde{
+    height: 44%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #d9d9d9;
+    margin-bottom: 15%;
+}
+.col4-garde img{
+    height: 75%;
+}
+.col4-parc{
+    height: 45%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #d9d9d9;
+}
+.col4-parc img{
+    height: 79%;
+}
+/* -------- FOOTER -------- */
+footer{
+    display: flex;
+    background-color: #F2F2F2;
+    padding-bottom: 30px;
+}
+.footer-box{
+    padding-left: 60px;
+    padding-top: 35px;
+    width: 27%;
 }
