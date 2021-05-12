@@ -21,8 +21,8 @@
                         <div class="menu">
                           <nav>    
                              <ul>
-                                <li><a href="#">Hébergements</a></li>
-                                <li><a href="#">Activités</a></li>
+                                <li><a href="#hebergement-ancre">Hébergements</a></li>
+                                <li><a href="#activites-ancre">Activités</a></li>
                              </ul>
                           </nav>
                           <div class="signin">
@@ -42,21 +42,13 @@
                 </form>
      
                 <!-- -------- HEADER/Filtres -------- -->
-                <div class="filtre">
-                    <span class="text-filtre">Filtres</span>
-                    <div class="economique">
-                        <i class="fas fa-money-bill-wave"></i><button class="eco">Economique</button>
-                    </div>
-                    <div class="familial">
-                        <i class="fas fa-child"></i><button class="fami">Familial</button>
-                    </div>
-                    <div class="romantique">
-                        <i class="fas fa-heart"></i><button class="roman">Romantique</button>
-                    </div>
-                    <div class="animaux">
-                        <i class="fas fa-dog"></i><button class="anim">Animaux autorisés</button>
-                    </div>
-                </div>
+            <div class="filtre">
+                <span class="text-filtre">Filtres</span>
+                <div><span class="fas fa-money-bill-wave filtre_icon"></span><span class="filtre_lien">Economique</span></div>
+                <div><span class="fas fa-child filtre_icon"></span><span class="filtre_lien">Familial</span></div>
+                <div><span class="fas fa-heart filtre_icon"></span><span class="filtre_lien">Romantique</span></div>
+                <div><span class="fas fa-dog filtre_icon"></span><span class="filtre_lien">Animaux autorisés</span></div>
+            </div>
 
                 <div class="filtre-info">
                     <div class="icone-info">
@@ -65,9 +57,10 @@
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                   </div>                  
              </header>
+
                 <!-- -------- MAIN/Hébergements -------- -->
             <main>
-                <section class="hebergement">
+                <section class="hebergement" id="hebergement-ancre">
                     <h2>Hébergement à Marseille</h2>
                     <div class="ligne1">
                         <div class="box">
@@ -203,7 +196,7 @@
                 </aside>
             </main>
                <!-- -------- SECTION/Activités -------- -->
-                <div class="titre-activites">
+                <div class="titre-activites" id="activites-ancre">
                     <h2>Activités à Marseille</h2>
                 </div>
                 <section class="activites">
@@ -241,19 +234,19 @@
             <footer>
                 <div class="footer-box">
                     <h3>A propos</h3>
-                    <p>Fonctionnement du site</p>
-                    <p>Conditions générales de vente</p>
-                    <p>Données et confidentialité</p>
+                    <a href="#"><p>Fonctionnement du site</p></a>
+                    <a href="#"><p>Conditions générales de vente</p></a>
+                    <a href="#"><p>Données et confidentialité</p></a>
                 </div>
                 <div class="footer-box">
                     <h3>Nos hébergements</h3>
-                    <p>Charte qualité</p>
-                    <p>Soumettre votre hôtel</p>
+                    <a href="#"><p>Charte qualité</p></a>
+                    <a href="#"><p>Soumettre votre hôtel</p></a>
                 </div>
                 <div class="footer-box">
                     <h3>Assistance</h3>
-                    <p>Centre d'aide</p>
-                    <p>Nous contacter</p>
+                    <a href="#"><p>Centre d'aide</p></a>
+                    <a href="#"><p>Nous contacter</p></a>
                 </div>
             </footer>
         </body>

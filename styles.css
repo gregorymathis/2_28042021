@@ -4,7 +4,7 @@ body{
     line-height: 1em;
 }
 #bloc-page{
-    width: 92%;
+    width: 85%;
     margin: auto;
 }
 /* -------- HEADER/Logo et Nav -------- */
@@ -25,16 +25,18 @@ nav ul{
 nav li{
     margin-right: 4em;
 }
-nav a{
-    color: black;
-    text-decoration: none;
-}
-nav a:focus{
+nav ul li a:hover{
     border-top: 2px solid #0065FC;
     padding-left: 1em;
     padding-right: 1em;
     color: #0065FC;
     padding-top: 29px;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 .signin{
     display: flex;
@@ -45,7 +47,7 @@ nav a:focus{
     font-weight: bold;
     color: #0065FC;
 }
-/* -------- HEADER/Recherche et Filtre -------- */
+/* -------- HEADER/Recherche -------- */
 h1{
     font-size: 1.5em;
 }
@@ -64,6 +66,7 @@ h1{
     font-size: 1em;
     font-weight: bold;
     border: 2px solid #F2F2F2;
+    padding-left: 10px;
 }
 #marecherche::placeholder{
     color: black;
@@ -76,70 +79,60 @@ h1{
     font-weight: bold;
     border: 2px solid #0065FC;
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* -------- HEADER/Filtre -------- */
+.filtre{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 .text-filtre{
     font-weight: bold;
-    margin-top: 0.7em;
-    margin-right: 0.5em;
+    margin-right: 40px;
 }
-.filtre{
-    display: flex;
+.filtre_icon{
+    background-color: #deebff;
+    color: #005fec;
+    border-radius: 30px;
+    padding:12px;
+    position: absolute;
+    margin:-12px;
 }
-.filtre button{
-    font-weight: bold;
-    background-color: white;
-    border: 2px solid #F2F2F2;
-    border-radius: 1em;
-    padding: 0.8em;
-    padding-left: 3em;
-    margin-left: 2em;
-    position: relative;
+
+.filtre_lien{
+  border-radius: 0 30px 30px 0;
+  border:2px solid #f1f1f1;
+  border-left: whitesmoke;
+  padding:10px 20px 10px 45px;
+  position: relative; 
+  margin-right: 40px;
+  font-weight: bold;
 }
-.filtre .fas{
-    background-color: #DEEBFF;
-    border-radius: 1.5em;
-    text-align: center;
-    padding: 0.8em;
+.filtre_lien:hover{
     color: #0065FC;
-}
-.fa-money-bill-wave{
-    position: absolute;
-    left: 8%;
-    z-index: 1;
-}
-.fa-child{
-    position: absolute;
-    left: 300px;
-    z-index: 1;
-}
-.fa-heart{
-    position: absolute;
-    left: 425px;
-    z-index: 1;
-}
-.fa-dog{
-    position: absolute;
-    left: 585px;
-    z-index: 1;
+    font-size: 17px;
 }
 .filtre-info {
     display: flex;
     align-items: center;
     margin-top: 1em;
 }
-  
+
 .icone-info {
-    padding-top: 0.5em;
+    margin-top: 5px;
     width: 30px;
     height: 30px;
+    margin-right: 10px;
 }
 .icone-info .fas {
-  padding: 2px;
+  padding: 5px;
   text-align: center;
   color: #0065FC;
   font-size: 12px;
 }
-  
+
 .filtre-info i {
     border: 2px solid #F2F2F2;
     border-radius: 20px;
@@ -288,7 +281,7 @@ aside{
     font-size: 17px;
 }
 .activites img{
-    object-fit: cover;
+    object-fit:cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -365,7 +358,9 @@ aside{
 .col4-parc img{
     height: 79%;
 }
+
 /* -------- FOOTER -------- */
+
 footer{
     display: flex;
     background-color: #F2F2F2;
@@ -375,4 +370,14 @@ footer{
     padding-left: 60px;
     padding-top: 35px;
     width: 27%;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+/* -------- PHONE -------- */
+
+@media screen and (max-width:700px) {
+    
 }
