@@ -1,18 +1,22 @@
-/* -------- Général -------- */
+/* Général */
 body{
     font-family: 'Raleway', sans-serif;
     line-height: 1em;
 }
-#bloc-page{
-    width: 85%;
+#bloc_page{
+    width: 90%;
     margin: auto;
 }
-/* -------- HEADER/Logo et Nav -------- */
+a:hover{
+    color: #0065FC;
+}
+/* HEADER/Logo */
 #bandeau{
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
+/* HEADER/NAV */
 .menu{
     display: flex;
     margin-right: 10px;
@@ -38,16 +42,16 @@ nav a{
     padding-left: 1em;
     padding-right: 1em;
 }
-.signin{
+.inscription{
     display: flex;
     align-items: center;
 }
-.signin a{
+.inscription a{
     text-decoration: none;
     font-weight: bold;
     color: #0065FC;
 }
-/* -------- HEADER/Recherche -------- */
+/* SECTION/Recherche */
 h1{
     font-size: 1.5em;
 }
@@ -60,6 +64,9 @@ h1{
     padding: 0.8em;
     border-top-left-radius: 1em;
     border-bottom-left-radius: 1em;
+}
+.bouton .fas{
+    display: none;
 }
 #marecherche{
     color: black;
@@ -82,13 +89,17 @@ h1{
     padding-left: 10px;
     padding-right: 10px;
 }
-/* -------- HEADER/Filtre -------- */
+/* SECTION/Filtres */
 .filtre{
     display: flex;
     margin-top: 40px;
     margin-bottom: 30px;
 }
-.text-filtre{
+.filtre a{
+    text-decoration: none;
+    color: black;
+}
+.text_filtre{
     font-weight: bold;
     margin-right: 40px;
 }
@@ -114,31 +125,31 @@ h1{
     color: #0065FC;
     font-size: 17px;
 }
-.filtre-info {
+.filtre_info {
     display: flex;
     align-items: center;
     margin-top: 1em;
 }
 
-.icone-info {
+.icone_info {
     margin-top: 5px;
     width: 30px;
     height: 30px;
     margin-right: 10px;
 }
-.icone-info .fas {
+.icone_info .fas {
   padding: 5px;
   text-align: center;
   color: #0065FC;
   font-size: 12px;
 }
 
-.filtre-info i {
+.filtre_info i {
     border: 2px solid #F2F2F2;
     border-radius: 20px;
     width: 1em;
 }
-/* -------- MAIN/SECTION/hebergement -------- */
+/* MAIN/SECTION/hebergement */
 main{
     display: flex;
     margin-top: 1em;
@@ -161,7 +172,7 @@ main{
     margin-left: 20px;
     margin-right: 20px;
 }
-.box{
+.boite{
     width: 30%;
     background-color: white;
     margin-left: 20px;
@@ -172,7 +183,7 @@ main{
     padding: 5px;
     box-shadow: 2px 2px 2px #d9d9d9;
 }
-.box img{
+.boite img{
     width: 100%;
     height: 130px;
     border-top-left-radius: 20px;
@@ -183,7 +194,7 @@ main a{
     text-decoration: none;
     color: black;
 }
-.description-box{
+.description_boite{
     margin-left: 10px;
     margin-bottom: 10px;
     line-height: 10px;
@@ -196,13 +207,13 @@ main a{
     margin-left: 45px;
     margin-bottom: 40px;
 }
-.box i{
+.boite i{
     color: #0065FC;
 }
-.box .gris{
+.boite .gris{
     color: #F2F2F2;
 }
-/* -------- MAIN/ASIDE -------- */
+/* MAIN/ASIDE */
 aside{
     display: flex;
     flex-direction: column;
@@ -211,26 +222,26 @@ aside{
     border-radius: 20px;
     padding: 20px;
 }
-.titre-et-icone{
+.titre_et_icone{
     display: flex;
     justify-content: space-between;
 }
-.titre-et-icone h2{
+.titre_et_icone h2{
     margin-top: 22px;
     margin-left: 18px;
 }
-.titre-et-icone i{
+.titre_et_icone i{
     color: black;
     font-size: 25px;
     margin-right: 15px;
     margin-top: 18px;
 }
-.content-popu{
+.conteneur_popu{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.box-popu{
+.boite_popu{
     display: flex;
     width: 90%;
     height: 155px;
@@ -240,31 +251,31 @@ aside{
     margin: 20px;
     box-shadow: 2px 2px 2px #d9d9d9;
 }
-.description-popu{
+.description_popu{
     margin-left: 10px;
 }
-.description-popu i{
+.description_popu i{
     color: #0065FC;
 }
-.box-popu a{
+.boite_popu a{
     display: -webkit-inline-flex;
 }
-.box-popu img{
+.boite_popu img{
     width: 40%;
     height: 100%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     object-fit: cover;
 }
-.box-popu .gris{
+.boite_popu .gris{
     color: #F2F2F2;
 }
-/* -------- SECTION/Activités -------- */
-.titre-activites{
+/* SECTION/Activités */
+.titre_activites{
     margin-top: 50px;
     margin-bottom: 30px;
 }
-.activites{
+.carte_activites{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -279,6 +290,9 @@ aside{
 .activites h3{
     margin-left: 1em;
     font-size: 17px;
+}
+.activites h3:hover{
+    color: #0065FC;
 }
 .activites img{
     object-fit:cover;
@@ -304,21 +318,21 @@ aside{
 .col2 img{
     width: 100%;
 }
-.col2-fort{
+.col2_fort{
     height: 55%;
     border-radius: 20px;
     box-shadow: 2px 2px 2px #d9d9d9;
     margin-bottom: 46px;
 }
-.col2-fort img{
+.col2_fort img{
     height: 80%;
 }
-.col2-frioul{
+.col2_frioul{
     height: 35%;
     border-radius: 20px;
     box-shadow: 2px 2px 2px #d9d9d9;
 }
-.col2-frioul img{
+.col2_frioul img{
     height: 71%;
 }
 .col3{
@@ -341,32 +355,32 @@ aside{
     width: 100%;
     height: 40%;
 }
-.col4-garde{
+.col4_garde{
     height: 44%;
     border-radius: 20px;
     box-shadow: 2px 2px 2px #d9d9d9;
     margin-bottom: 15%;
 }
-.col4-garde img{
+.col4_garde img{
     height: 75%;
 }
-.col4-parc{
+.col4_parc{
     height: 45%;
     border-radius: 20px;
     box-shadow: 2px 2px 2px #d9d9d9;
 }
-.col4-parc img{
+.col4_parc img{
     height: 79%;
 }
 
-/* -------- FOOTER -------- */
+/* FOOTER */
 
 footer{
     display: flex;
     background-color: #F2F2F2;
     padding-bottom: 30px;
 }
-.footer-box{
+.footer_boite{
     padding-left: 60px;
     padding-top: 35px;
     width: 27%;
@@ -376,8 +390,236 @@ footer a{
     color: black;
 }
 
-/* -------- PHONE -------- */
+/* PHONE */
 
-@media screen and (max-width:700px) {
+@media screen and (max-width: 667px)
+{
+    /* général */
     
+    #bloc_page{
+        width: 100%;
+    }
+    /* header */
+    #bandeau{
+        display: block;
+        margin-top: 0;
+    }
+    .logo{
+        margin-left: 26px;
+    }
+    .inscription{
+        position: absolute;
+        top: 22px;
+        right: 20px;
+    }
+    nav ul{
+        padding-left: 0;
+    }
+    nav li{
+        margin: 0;
+        text-align: center;
+        padding: 10px 28px 10px 30px;
+        border-bottom: 2px solid #F2F2F2;
+    }
+    nav ul li:hover{
+        border-bottom: 2px solid #0065FC;
+        padding: 10px 30px 10px 30px;
+        color: #0065FC;
+    }
+    nav ul li a:hover{
+        border-top: 0px solid #0065FC;
+    }
+    /* titre h1 et p */
+    .titre h1,.titre p{
+        text-align: center;
+        line-height: 1em;
+        margin-right: 20px;
+    }
+    /* recherche */
+    .recherche{
+        margin: 30px 0px 20px 20px;
+    }
+    .bouton{
+        border-radius: 1em;
+        padding: 2px 2px 2px 2px;
+        position: absolute;
+        left: 280px;
+    }
+    .bouton .fas{
+        display: block;
+        background-color: #0065FC;
+    }
+    .bouton span{
+        display: none;
+    }
+    /* filtres */
+    .filtre{
+        align-content: space-between;
+        flex-wrap: wrap;
+        margin-left: 25px;
+        margin-top: -20px;
+    }
+    .filtre div{
+        margin-top: 40px;
+    }
+    .text_filtre{
+        width: 100%;
+        margin-left: -10px;
+    }
+    .filtre_lien{
+        margin-right: 20px;
+    }
+    .filtre_info{
+        margin-top: 0px;
+    }
+    .filtre_info p{
+        text-align: left;
+    }
+    .icone_info{
+        margin-top: -10px;
+    }
+
+    /* Main */
+    main{
+        flex-direction: column-reverse;
+    }
+
+    /* Aside */
+    aside{
+        width: 89%;
+        margin: auto;
+        border-radius: 0px;
+    }
+    .titre_et_icone{
+        margin-bottom: 6px;
+    }
+    .titre_et_icone h2{
+        margin-left: 0px;
+    }
+    .titre_et_icone i{
+        margin-right: 0px;
+    }
+    .boite_popu{
+        width: 100%;
+        margin: 7px;
+        height: 140px;
+    }
+    .boite_popu img{
+        height: auto;
+        width: 45%;
+    }
+    .description_popu{
+        margin-left: 16px;
+    }
+    .description_popu i{
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    /* Hebergement */
+    .hebergement{
+        flex-direction: column;
+        width: 98%;
+        background-color: white;
+    }
+    .hebergement h2{
+        margin: 40px 0px 15px 12px;
+    }
+    .boite{
+        width: 95%;
+        margin-left: 0px;
+        margin-bottom: 2px;
+    }
+    .description_boite{
+        line-height: 5px;
+    }
+    .description_boite i{
+        font-size: 12px;
+    }
+    .ligne1{
+        flex-direction: column;
+        width: 100%;
+        margin-left: 10px;
+    }
+    .ligne2{
+        flex-direction: column;
+        width: 100%;
+        margin-left: 10px;
+    }
+    .hebergement .plus{
+        margin: 40px 0px 0px 15px;
+    }
+
+    /* Activités */
+    .activites{
+        width: 92%;
+        margin: auto;
+    }
+    .carte_activites{
+        flex-direction: column;
+    }
+    .activites h2{
+        margin-left: 10px;
+    }
+    .activites h3{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .col1{
+        width: 100%;
+        height: 155px;
+        padding-bottom: 40px;
+        margin-bottom: 25px;
+    }
+    .col2{
+        width: 100%;
+    }
+    .col2_fort{
+        width: 100%;
+        height: 155px;
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+    }
+    .col2_frioul{
+        width: 100%;
+        height: 155px;
+        margin-bottom: 25px;
+        padding-bottom: 15px;
+    }
+    .col3{
+        width: 100%;
+        height: 155px;
+        padding-bottom: 40px;
+        margin-bottom: 25px;
+    }
+    .col4{
+        width: 100%;
+    }
+    .col4_garde{
+        width: 100%;
+        height: 155px;
+        margin-bottom: 25px;
+        padding-bottom: 20px;
+    }
+    .col4_parc{
+        width: 100%;
+        height: 155px;
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+    }
+
+    /* Footer */
+    footer{
+        display: block;
+        margin-top: 820px;
+    }
+    .footer_boite h3{
+        margin-bottom: 30px;
+    }
+    .footer_boite{
+        width: 100%;
+        padding-left: 25px;
+        padding-top: 25px;
+    }
+
 }
