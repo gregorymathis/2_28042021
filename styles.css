@@ -1,7 +1,11 @@
 /* Général */
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: 'Raleway', sans-serif;
-    line-height: 1em;
+    line-height: 2em;
 }
 #bloc_page{
     width: 90%;
@@ -15,6 +19,7 @@ a:hover{
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 /* HEADER/NAV */
 .menu{
@@ -25,6 +30,7 @@ nav ul{
     list-style: none;
     display: flex;
     align-items: center;
+    margin-top: 13px;
 }
 nav li{
     margin-right: 4em;
@@ -54,10 +60,12 @@ nav a{
 /* SECTION/Recherche */
 h1{
     font-size: 1.5em;
+    margin-bottom: 6px;
 }
 .recherche{
     display: flex;
-    margin-bottom: 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .recherche .fas{
     background-color: #F2F2F2;
@@ -107,9 +115,9 @@ h1{
     background-color: #deebff;
     color: #005fec;
     border-radius: 30px;
-    padding:12px;
+    padding: 13px;
     position: absolute;
-    margin:-12px;
+    margin: -5px;
 }
 
 .filtre_lien{
@@ -119,6 +127,7 @@ h1{
   padding:10px 20px 10px 45px;
   position: relative; 
   margin-right: 40px;
+  margin-left: 10px;
   font-weight: bold;
 }
 .filtre_lien:hover{
@@ -132,7 +141,6 @@ h1{
 }
 
 .icone_info {
-    margin-top: 5px;
     width: 30px;
     height: 30px;
     margin-right: 10px;
@@ -152,7 +160,7 @@ h1{
 /* MAIN/SECTION/hebergement */
 main{
     display: flex;
-    margin-top: 1em;
+    margin-top: 2em;
 }
 .hebergement{
     display: flex;
@@ -194,10 +202,13 @@ main a{
     text-decoration: none;
     color: black;
 }
+main h2{
+    margin-bottom: 10px;
+}
 .description_boite{
     margin-left: 10px;
-    margin-bottom: 10px;
-    line-height: 10px;
+    margin-bottom: 5px;
+    line-height: 30px;
 }
 .hebergement h2{
     margin-left: 45px;
@@ -205,7 +216,8 @@ main a{
 }
 .hebergement .plus{
     margin-left: 45px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    margin-top: 10px;
 }
 .boite i{
     color: #0065FC;
@@ -233,7 +245,7 @@ aside{
 .titre_et_icone i{
     color: black;
     font-size: 25px;
-    margin-right: 15px;
+    margin-right: 20px;
     margin-top: 18px;
 }
 .conteneur_popu{
@@ -243,7 +255,7 @@ aside{
 }
 .boite_popu{
     display: flex;
-    width: 90%;
+    width: 85%;
     height: 155px;
     background-color: white;
     border-radius: 20px;
@@ -252,10 +264,15 @@ aside{
     box-shadow: 2px 2px 2px #d9d9d9;
 }
 .description_popu{
-    margin-left: 10px;
+    margin: 15px 30px 0px 25px;
+    line-height: 1.5em;
+}
+.description_popu h3{
+    margin-bottom: 10px;
 }
 .description_popu i{
     color: #0065FC;
+    margin-top: 30px;
 }
 .boite_popu a{
     display: -webkit-inline-flex;
@@ -380,6 +397,9 @@ footer{
     background-color: #F2F2F2;
     padding-bottom: 30px;
 }
+footer h3{
+    margin-bottom: 10px;
+}
 .footer_boite{
     padding-left: 60px;
     padding-top: 35px;
@@ -392,12 +412,13 @@ footer a{
 
 /* PHONE */
 
-@media screen and (max-width: 667px)
+@media screen and (max-width: 700px)
 {
     /* général */
     
     #bloc_page{
         width: 100%;
+        margin: auto;
     }
     /* header */
     #bandeau{
@@ -409,7 +430,7 @@ footer a{
     }
     .inscription{
         position: absolute;
-        top: 22px;
+        top: 10px;
         right: 20px;
     }
     nav ul{
@@ -432,12 +453,13 @@ footer a{
     /* titre h1 et p */
     .titre h1,.titre p{
         text-align: center;
-        line-height: 1em;
+        line-height: 1.4em;
         margin-right: 20px;
     }
     /* recherche */
     .recherche{
-        margin: 30px 0px 20px 20px;
+        width: 100%;
+        margin: 30px 0px 20px 30px;
     }
     .bouton{
         border-radius: 1em;
@@ -460,17 +482,17 @@ footer a{
         margin-top: -20px;
     }
     .filtre div{
-        margin-top: 40px;
+        margin-top: 20px;
     }
     .text_filtre{
         width: 100%;
-        margin-left: -10px;
     }
     .filtre_lien{
         margin-right: 20px;
     }
     .filtre_info{
-        margin-top: 0px;
+        margin-left: 15px;
+        line-height: 1em;
     }
     .filtre_info p{
         text-align: left;
@@ -487,8 +509,13 @@ footer a{
     /* Aside */
     aside{
         width: 89%;
-        margin: auto;
         border-radius: 0px;
+    }
+    aside h3{
+        font-size: 16px;
+    }
+    aside p{
+        font-size: 12px;
     }
     .titre_et_icone{
         margin-bottom: 6px;
@@ -498,6 +525,7 @@ footer a{
     }
     .titre_et_icone i{
         margin-right: 0px;
+        margin-top: 24px;
     }
     .boite_popu{
         width: 100%;
@@ -511,15 +539,19 @@ footer a{
     .description_popu{
         margin-left: 16px;
     }
+    .description_popu h3{
+        margin-bottom: 2px;
+    }
     .description_popu i{
-        margin-top: 20px;
+        margin-top: 30px;
         font-size: 12px;
     }
 
     /* Hebergement */
     .hebergement{
         flex-direction: column;
-        width: 98%;
+        width: 89%;
+        margin-left: 10px;
         background-color: white;
     }
     .hebergement h2{
@@ -531,7 +563,7 @@ footer a{
         margin-bottom: 2px;
     }
     .description_boite{
-        line-height: 5px;
+        line-height: 25px;
     }
     .description_boite i{
         font-size: 12px;
@@ -562,7 +594,6 @@ footer a{
         margin-left: 10px;
     }
     .activites h3{
-        margin-top: 20px;
         margin-left: 20px;
     }
     .col1{
@@ -617,7 +648,7 @@ footer a{
         margin-bottom: 30px;
     }
     .footer_boite{
-        width: 100%;
+        width: auto;
         padding-left: 25px;
         padding-top: 25px;
     }
