@@ -9,6 +9,7 @@ body{
 }
 #bloc_page{
     width: 90%;
+    margin: auto;
 }
 a:hover{
     color: #0065FC;
@@ -431,18 +432,31 @@ footer a{
     .logo{
         margin-left: 26px;
     }
+    .menu{
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
     .inscription{
         position: absolute;
         top: 10px;
         right: 20px;
     }
+    nav{
+        width: 100%;
+    }
+    nav a{
+        padding: 0;
+    }
     nav ul{
         padding-left: 0;
     }
     nav li{
+        width: 50%;
         margin: 0;
         text-align: center;
-        padding: 10px 28px 10px 30px;
+        padding: 10px 35px 10px 35px;
         border-bottom: 2px solid #F2F2F2;
     }
     nav ul li:hover{
@@ -455,19 +469,19 @@ footer a{
     }
     /* titre h1 et p */
     .titre h1,.titre p{
-        text-align: center;
+        margin-left: 24px;
+        margin-right: 30px;
         line-height: 1.4em;
-        margin-right: 20px;
     }
     /* recherche */
     .recherche{
-        margin: 30px 0px 20px 30px;
+        margin: 30px 0px 20px 24px;
     }
     .bouton{
         border-radius: 1em;
         padding: 2px 2px 2px 2px;
         position: absolute;
-        left: 280px;
+        left: 260px;
     }
     .bouton .fas{
         display: block;
