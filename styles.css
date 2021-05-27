@@ -9,7 +9,6 @@ body{
 }
 #bloc_page{
     width: 90%;
-    margin: auto;
 }
 a:hover{
     color: #0065FC;
@@ -189,7 +188,7 @@ main{
     margin-top: 10px;
     border-radius: 20px;
     padding: 5px;
-    box-shadow: 2px 2px 2px #d9d9d9;
+    box-shadow: 2px 2px 10px 5px #d9d9d9;
 }
 .boite img{
     width: 100%;
@@ -261,7 +260,7 @@ aside{
     border-radius: 20px;
     padding: 5px;
     margin: 20px;
-    box-shadow: 2px 2px 2px #d9d9d9;
+    box-shadow: 2px 2px 10px 5px #d9d9d9;
 }
 .description_popu{
     margin: 15px 30px 0px 25px;
@@ -269,10 +268,14 @@ aside{
 }
 .description_popu h3{
     margin-bottom: 10px;
+    font-size: 15px;
+}
+.description_popu p{
+    font-size: 13px;
 }
 .description_popu i{
     color: #0065FC;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .boite_popu a{
     display: -webkit-inline-flex;
@@ -320,7 +323,7 @@ aside{
     width: 25%;
     margin-right: 3%;
     border-radius: 20px;
-    box-shadow: 2px 2px 2px #d9d9d9;
+    box-shadow: 2px 2px 10px 5px #d9d9d9;
 }
 .col1 img{
     width: 100%;
@@ -338,7 +341,7 @@ aside{
 .col2_fort{
     height: 55%;
     border-radius: 20px;
-    box-shadow: 2px 2px 2px #d9d9d9;
+    box-shadow: 2px 2px 10px 5px #d9d9d9;
     margin-bottom: 46px;
 }
 .col2_fort img{
@@ -347,7 +350,7 @@ aside{
 .col2_frioul{
     height: 35%;
     border-radius: 20px;
-    box-shadow: 2px 2px 2px #d9d9d9;
+    box-shadow: 2px 2px 10px 5px #d9d9d9;
 }
 .col2_frioul img{
     height: 71%;
@@ -356,7 +359,7 @@ aside{
     width: 25%;
     margin-right: 3%;
     border-radius: 20px;
-    box-shadow: 2px 2px 2px #d9d9d9;
+    box-shadow: 2px 2px 10px 5px #d9d9d9;
 }
 .col3 img{
     width: 100%;
@@ -375,7 +378,7 @@ aside{
 .col4_garde{
     height: 44%;
     border-radius: 20px;
-    box-shadow: 2px 2px 2px #d9d9d9;
+    box-shadow: 2px 2px 10px 5px #d9d9d9;
     margin-bottom: 15%;
 }
 .col4_garde img{
@@ -384,7 +387,7 @@ aside{
 .col4_parc{
     height: 45%;
     border-radius: 20px;
-    box-shadow: 2px 2px 2px #d9d9d9;
+    box-shadow: 2px 2px 10px 5px #d9d9d9;
 }
 .col4_parc img{
     height: 79%;
@@ -412,7 +415,7 @@ footer a{
 
 /* PHONE */
 
-@media screen and (max-width: 700px)
+@media screen and (max-width: 767px)
 {
     /* général */
     
@@ -458,7 +461,6 @@ footer a{
     }
     /* recherche */
     .recherche{
-        width: 100%;
         margin: 30px 0px 20px 30px;
     }
     .bouton{
@@ -652,5 +654,68 @@ footer a{
         padding-left: 25px;
         padding-top: 25px;
     }
+}
+/* TABLETTE */
 
+@media screen and (min-width: 768px) and (max-width: 1024px)
+{
+    #bloc_page{
+        width: 95%;
+        margin: auto;
+    }
+    .text_filtre{
+        display: none;
+    }
+    .filtre_lien{
+        margin-right: 10px;
+        margin-left: 0px;
+    }
+    main{
+        flex-direction: column;
+    }
+    .hebergement{
+        width: 90%;
+        margin: auto;
+    }
+    .boite{
+        width: 32%;
+        margin-left: 0px;
+        margin-right: 5px;
+    }
+    aside{
+        width: 90%;
+        margin-top: 20px;
+        margin-left: 35px;
+        padding: 0%;
+    }
+    .titre_et_icone h2{
+        margin-top: 45px;
+        margin-left: 100px;
+    }
+    .titre_et_icone i{
+        margin-right: 100px;
+        margin-top: 50px;
+    }
+    .boite_popu{
+        width: 70%;
+        height: 180px;
+    }
+    .activites{
+        width: 90%;
+        margin: auto;
+    }
+    .activites h3{
+        font-size: 14px;
+        line-height: 1em;
+    }
+    .col4_garde{
+        margin-bottom: 31%;
+    }
+    .carte_activites{
+        margin-bottom: 40px;
+        height: 400px;
+    }
+    .footer_boite{
+        width: 100%;
+    }
 }
