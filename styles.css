@@ -553,13 +553,15 @@ footer a{
         width: 45%;
     }
     .description_popu{
-        margin-left: 16px;
+        margin-top: 10px;
+        margin-left: 10px;
+        line-height: 1.3em;
     }
     .description_popu h3{
         margin-bottom: 2px;
     }
     .description_popu i{
-        margin-top: 30px;
+        margin-top: 0;
         font-size: 12px;
     }
 
